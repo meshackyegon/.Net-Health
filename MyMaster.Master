@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MyMaster.master.cs" Inherits="HealthManagement.MyMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="MyMaster.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="header">
+        <p>Health Management System</p>
+        </div>
+    <div class="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="Login.aspx">Login</a></li>
+            <li><a href="CreateAccount.aspx">Create Account</a></li>
+            <li><a href="bookservice.aspx">Book service</a></li>
+            <li><a href="bookdoctor.aspx">Book Doctor</a></li>
+        </ul>
+    </div>
+    <div class="aside">
+        <p>Health services</p>
+    </div>
+    <div class="section">
+
+     
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+    </div>
+        </div>
+         <div class ="footer">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="bookservice.aspx">Book service</a></li>
+            <li><a href="requestdrugs.aspx">Request Drugs</a></li>
+            <li><a href="bookservice.aspx">Book Doctor</a></li>
+        </ul>
+            <p>&copy; 2021 All rights reserved</p>
+        </div>
+    </form>
+</body>
+</html>
